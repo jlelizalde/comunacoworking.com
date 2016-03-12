@@ -37,7 +37,7 @@ body {
 
 .grid-pad {
 	padding-top: 20px;
-	padding-left: 20px; /* grid-space to left */
+	padding-left: 10%; /* grid-space to left */
 	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
