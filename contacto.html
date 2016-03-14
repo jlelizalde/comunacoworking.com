@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Comuna Coworking</title>
-    <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="css/simplegrid.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" >
-  </head>
-  <body>
+<head>
+  <title>Comuna Coworking</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel="stylesheet" href="css/simplegrid.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="grid grid-pad">
+    <div class="col-1-3 logo">
+      <a href="index.html"><img src="fonts/logo.svg" alt="Logotipo Comuna Coworking"></a>
+    </div>
+  <div class="col-1-3 push-1-3">
+      <div class="redes-sociales">
+        <a target="_blank" href="https://www.facebook.com/comunacoworking">
+          <span class="icon-FacebookCopy2">
+            <span class="path1"></span><span class="path2"></span></span>
+          </span>
+        </a>
+        <a target="_blank" href="https://twitter.com/comunaespacio">
+          <span class="icon-TwitterCopy2">
+            <span class="path1"></span><span class="path2"></span></span>
+          </span>
+        </a>
+        <a href="contacto.html">| Contacto</a>
+      </div>
+    </div>
+  </div>
 
     <div class="grid grid-pad">
       <div class="col-10-12">
-        <div class="contenido">
-          <p class="titulo">Queremos que seas <b>parte de comuna</b> </p>
+        <div class="subtitulo">
+          <span class="regular">Queremos que seas </span><span class="semi-bold">parte de comuna</span>
         </div>
-        <div class="contenido">
-          <p class="subtitulo-gris">Déjanos saber de ti</p>
+        <br>
+        <div class="subtitulo-contacto">
+          <span class="semi-bold">Déjanos saber de ti</span>
         </div>
       </div>
     </div>
@@ -25,7 +50,17 @@
     <!-- Insertar formulario aquí -->
     <div class="grid grid-pad">
       <div class="col-6-12">
-        <!-- Formulario aquí  -->
+        <form action="http://formspree.io/jler.152@gmail.com" method="POST">
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="index.html" />
+          <input type="text" name="name" placeholder="Nombre">
+          <br>
+          <input type="email" name="_replyto" placeholder="Correo electrónico">
+          <br>
+          <input type="text" name="tel" placeholder="Celular">
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
       </div>
       <div class="col-6-12">
         <p>Somos socialmente activos</p>
@@ -33,15 +68,6 @@
         <div class="action-buttons">
           <input type="button" class="btn-naranja" value="Facebook">
           <input type="button" class="btn-gris" value="Twitter">
-        </div>
-      </div>
-    </div>
-
-    <div class="grid grid-pad">
-      <div class="col-10-12">
-        <div class="action-buttons">
-          <input type="button" class="btn-naranja" value="Enviar">
-          <input type="button" class="btn-gris" value="Conecta por facebook">
         </div>
       </div>
     </div>

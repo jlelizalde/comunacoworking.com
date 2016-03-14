@@ -14,7 +14,7 @@ body {
 button {
   border: none;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -27,8 +27,8 @@ button:hover {
 }
 
 a {
-    color: #303D3D;
-    text-decoration: none;
+  color: #303D3D;
+  text-decoration: none;
 }
 
 .titulo {
@@ -48,9 +48,32 @@ a {
   font-size: 1.4em;
 }
 
+.subtitulo-contacto {
+  font-size: 0.9em;
+  color: #303D3D;
+}
+
+.subtitulo-naranja {
+  font-size: 0.7em;
+  color: #FF6633;
+}
+
+.subtitulo-azul {
+  font-size: 0.7em;
+  color: #1F8F9A;
+}
+
+.acercade {
+  font-size: 0.6em;
+}
+
 /****** Font weights ************/
 .regular {
   font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
 }
 
 .semi-bold {
@@ -79,4 +102,16 @@ a {
 
 .gris {
   background-color: rgba(48, 61, 61, 0.25);
+  height: 7.5em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.gris-top {
+  background-color: none;
+}
+
+.icon-about {
+  font-size: 2em;
+  transform: translateY(0.4em);
 }
