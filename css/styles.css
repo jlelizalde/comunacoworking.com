@@ -36,7 +36,7 @@ a {
 }
 
 .redes-sociales {
-  font-size: 1.2em;
+  font-size: 1em;
   display: block;
 }
 
@@ -115,3 +115,44 @@ a {
   font-size: 2em;
   transform: translateY(0.4em);
 }
+
+/*contacto.html*/
+.input-naranja {
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 800;
+  background-color: #FF6633;
+}
+
+#contact-form > input[type=text], input[type=email] {
+  background-color: rgba(255, 102, 51, 0.28);
+  border: none;
+  height: 2em;
+  width: 350px;
+  margin-bottom: 1em;
+  padding-left: 10px;
+  padding-top: 0.6em;
+}
+
+/* Placeholder styling */
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(49, 61, 61);
+  font-weight: 400;
+  font-size: 0.6em;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+

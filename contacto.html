@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -50,18 +52,20 @@
     <!-- Insertar formulario aquí -->
     <div class="grid grid-pad">
       <div class="col-6-12">
-        <form action="http://formspree.io/jler.152@gmail.com" method="POST">
+        <form action="//formspree.io/jler.152@gmail.com" method="POST" id="contact-form">
+          <!-- Contact fields -->
+          <input type="text" name="name" id="name" placeholder="Nombre: Carlos pero pueden decirme Charlie" required>
+          <input type="email" name="_replyto" id="email" placeholder="Email: Tienes un email de comuna ¡hurra!" required>
+          <input type="text" name="tel" id="tel" placeholder="Celular: Queremos escuchar tu voz" required>
+          <!-- <textarea name="message" id="message" cols="23" rows="2" placeholder="Envíanos un comentario" required></textarea> -->
+          <!-- Config fields -->
           <input type="text" name="_gotcha" style="display:none" />
-          <input type="hidden" name="_next" value="index.html" />
-          <input type="text" name="name" placeholder="Nombre">
+          <!-- <input type="hidden" name="_next" value="index.html" /> -->
           <br>
-          <input type="email" name="_replyto" placeholder="Correo electrónico">
-          <br>
-          <input type="text" name="tel" placeholder="Celular">
-          <br>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="ENVIAR" id="sendForm" class="input-naranja">
         </form>
       </div>
+
       <div class="col-6-12">
         <p>Somos socialmente activos</p>
         <p>¡Siguenos en redes sociales!</p>
@@ -71,6 +75,7 @@
         </div>
       </div>
     </div>
+
 
   </body>
 </html>
