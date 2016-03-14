@@ -1,10 +1,5 @@
 /* Basic styles */
 body {
-  background-image: url(../img/coworking-space.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -20,6 +15,7 @@ button {
   display: inline-block;
   font-size: 0.9em;
   font-weight: bold;
+  border-radius: 3px;
 }
 
 button:hover {
@@ -31,12 +27,25 @@ a {
   text-decoration: none;
 }
 
+#img-background {
+  background-image: url(../img/coworking-space.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
 .titulo {
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+.titulo-container {
+  transform: translateY(1em);
 }
 
 .redes-sociales {
-  font-size: 1em;
+  font-size: 0.9em;
   display: block;
 }
 
@@ -50,7 +59,7 @@ a {
 
 .subtitulo-contacto {
   font-size: 0.9em;
-  color: #303D3D;
+  color: rgba(48, 61, 61, .60);
 }
 
 .subtitulo-naranja {
@@ -100,6 +109,13 @@ a {
   background-color: #303D3D;
 }
 
+.btn-azul{
+  background-color: #1F8F9A;
+  font-size: 0.6em;
+  padding: 5px;
+  width: 100px;
+}
+
 .gris {
   background-color: rgba(48, 61, 61, 0.25);
   height: 7.5em;
@@ -128,6 +144,7 @@ a {
   font-size: 0.7em;
   font-weight: 800;
   background-color: #FF6633;
+  border-radius: 3px;
 }
 
 #contact-form > input[type=text], input[type=email] {
@@ -136,23 +153,28 @@ a {
   height: 2em;
   width: 350px;
   margin-bottom: 1em;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 0.6em;
 }
 
 /* Placeholder styling */
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgb(49, 61, 61);
-  font-weight: 400;
+  color: rgba(49, 61, 61, .70);
+  font-weight: 500;
   font-size: 0.6em;
 }
 input::-moz-placeholder { /* Firefox 19+ */
-  color: pink;
+  color: rgb(49, 61, 61);
+  font-weight: 500;
+  font-size: 0.6em;
 }
 input:-ms-input-placeholder { /* IE 10+ */
-  color: pink;
+  color: rgb(49, 61, 61);
+  font-weight: 500;
+  font-size: 0.6em;
 }
 input:-moz-placeholder { /* Firefox 18- */
-  color: pink;
+  color: rgb(49, 61, 61);
+  font-weight: 500;
+  font-size: 0.6em;
 }
-
