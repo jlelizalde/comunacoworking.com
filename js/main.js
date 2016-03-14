@@ -3,7 +3,7 @@ var contactForm = $("#contact-form");
 contactForm.submit(function(e){
   e.preventDefault();
   $.ajax({
-    url: '//formspree.io/jler.152@gmail.com',
+    url: '//formspree.io/comuna.coworking@gmail.com',
     method: 'POST',
     data: $(this).serialize(),
     dataType: 'json',
