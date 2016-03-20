@@ -76,6 +76,11 @@ a {
   font-size: 0.6em;
 }
 
+.trabajemos {
+  font-size: 1.5em;
+  color: rgba(48, 61, 61, .60);
+}
+
 /****** Font weights ************/
 .regular {
   font-weight: 400;
