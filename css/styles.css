@@ -124,8 +124,7 @@ a {
 .gris {
   background-color: rgba(48, 61, 61, 0.25);
   height: 7.5em;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding: 1em 5px 0.5em 5px;
 }
 
 .gris-top {
