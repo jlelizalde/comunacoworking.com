@@ -1,0 +1,40 @@
+/**
+ * SCSS file to be compiled to CSS with SASS
+ */
+
+/** Base colors and variables */
+$basic-font: 'Poppins', sans-serif;
+$base-font-size: 20px;
+$orange-color: #FF6633;
+$blue-color: #1F8F9A;
+$gray-color: #303D3D;
+
+header {
+    font-family: $basic-font;
+    font-size: $base-font-size;
+    background-color: $blue-color;
+}
+
+button {
+    border : none;
+    color : white;
+    padding : 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $base-font-size;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+navbar {
+    background-color: none;
+}
+
+span.glyphicon-menu-down {
+    font-size: 2em;
+}
