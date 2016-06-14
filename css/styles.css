@@ -2,10 +2,116 @@
  * SCSS file to be compiled to CSS with SASS
  */
 /** Base colors and variables */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px; }
+  body.semi-bold {
+    font-weight: 700; }
+
 header {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  background-color: #1F8F9A; }
+  background-color: #FFFFFF; }
+
+aside {
+  color: #FFFFFF;
+  padding-top: 4em;
+  padding-bottom: 4em; }
+  aside.primer-comentario {
+    background-color: #1F8F9A;
+    font-weight: 700;
+    font-size: 3em; }
+  aside.segundo-comentario {
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #FF6633;
+    font-size: 1.5em; }
+    aside.segundo-comentario .regular {
+      font-weight: 400; }
+    aside.segundo-comentario .semi-bold {
+      font-weight: 600; }
+
+section {
+  background-color: #FFFFFF;
+  padding: 5%;
+  /* END Contacto */ }
+  section.servicios .gris-top {
+    background-color: none; }
+  section.servicios .gris {
+    background-color: rgba(48, 61, 61, 0.25);
+    height: 7.5em;
+    padding: 1em 5px 0.5em 5px; }
+  section.servicios .icon-about {
+    font-size: 2em;
+    transform: translateY(0.4em); }
+  section.servicios .subtitulo {
+    font-size: 0.7em;
+    font-weight: 600; }
+    section.servicios .subtitulo.naranja {
+      color: #FF6633; }
+    section.servicios .subtitulo.azul {
+      color: #1F8F9A; }
+  section.servicios .servicios-text {
+    font-size: 0.6em;
+    font-weight: 500; }
+  section.servicios .titulo-servicios {
+    font-size: 1.4em;
+    font-weight: 400; }
+  section.contacto {
+    /*Form inputs placeholder's styles*/ }
+    section.contacto .subtitulo-1 {
+      font-size: 1.4em;
+      font-weight: 400; }
+    section.contacto .subtitulo-2 {
+      font-size: 0.9em;
+      font-weight: 600;
+      color: rgba(48, 61, 61, 0.6); }
+    section.contacto .input-naranja {
+      border: none;
+      color: white;
+      padding: 5px;
+      width: 150px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.7em;
+      font-weight: 800;
+      background-color: #FF6633;
+      border-radius: 3px; }
+    section.contacto input[type=text], section.contacto input[type=email] {
+      background-color: rgba(255, 102, 51, 0.28);
+      border: none;
+      height: 2em;
+      width: 350px;
+      margin-bottom: 1em;
+      padding-left: 15px;
+      padding-top: 0.6em; }
+    section.contacto input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: rgba(49, 61, 61, 0.7);
+      font-weight: 500;
+      font-size: 0.6em; }
+    section.contacto input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #313d3d;
+      font-weight: 500;
+      font-size: 0.6em; }
+    section.contacto input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #313d3d;
+      font-weight: 500;
+      font-size: 0.6em; }
+    section.contacto input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #313d3d;
+      font-weight: 500;
+      font-size: 0.6em; }
+
+/* END Section */
+footer {
+  font-weight: 400;
+  font-size: 0.7em;
+  padding: 2%; }
 
 button {
   border: none;
@@ -17,14 +123,51 @@ button {
   font-size: 20px;
   font-weight: bold;
   border-radius: 3px; }
+  button.naranja {
+    background-color: #FF6633; }
+  button.gris {
+    background-color: #303D3D; }
+  button.azul {
+    background-color: #1F8F9A;
+    font-size: 0.6em;
+    padding: 5px;
+    width: 100px; }
+  button.transparente {
+    border: 1px solid rgba(48, 61, 61, 0.25);
+    color: rgba(48, 61, 61, 0.6);
+    background-color: transparent;
+    width: 350px; }
 
 button:hover {
   opacity: 0.8; }
 
-navbar {
-  background-color: none; }
+a {
+  color: #303D3D;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
+
+.logo {
+  height: 6em;
+  margin-right: 50px; }
+
+.titulo {
+  transform: translateY(1em);
+  font-weight: bold;
+  font-size: 1.5em; }
+
+/*Overrides bootstrap default navbar style*/
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 5%;
+  font-size: 1em; }
 
 span.glyphicon-menu-down {
   font-size: 2em; }
+
+.encabezado {
+  padding-top: 1%;
+  padding-bottom: 1%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,17 +2,172 @@
  * SCSS file to be compiled to CSS with SASS
  */
 
-/** Base colors and variables */
-$basic-font: 'Poppins', sans-serif;
-$base-font-size: 20px;
-$orange-color: #FF6633;
-$blue-color: #1F8F9A;
-$gray-color: #303D3D;
+ /** Base colors and variables */
+ $basic-font: 'Poppins', sans-serif;
+ $base-font-size: 20px;
+ $orange-color: #FF6633;
+ $blue-color: #1F8F9A;
+ $gray-color: #303D3D;
+ $gray-background : rgba(48, 61, 61, 0.25);
+ $gray-transparent: rgba(48, 61, 61, 0.60);
+ $white-color: #FFFFFF;
+ $regular: 400;
+ $medium : 500;
+ $semi-bold: 600;
+ $bold: 700;
+ $dummy-color: #999;
+ $dummy-color2: #777;
+
+ body {
+    font-family: $basic-font;
+    font-size: $base-font-size;
+
+    &.semi-bold {
+        font-weight: $bold;
+    }
+}
 
 header {
     font-family: $basic-font;
     font-size: $base-font-size;
-    background-color: $blue-color;
+    background-color: $white-color;
+}
+
+aside {
+    color: $white-color;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    &.primer-comentario {
+        background-color: $blue-color;
+        font-weight: $bold;
+        font-size: 3em;
+    }
+
+    &.segundo-comentario {
+        padding-left: 15%;
+        padding-right: 15%;
+        background-color: $orange-color;
+        font-size: 1.5em;
+        .regular {
+            font-weight: $regular;
+        }
+        .semi-bold {
+            font-weight: $semi-bold;
+        }
+    }
+}
+
+section {
+    background-color: $white-color;
+    padding: 5%;
+
+    &.servicios {
+        .gris-top {
+            background-color: none;
+        }
+
+        .gris {
+            background-color: $gray-background;
+            height: 7.5em;
+            padding: 1em 5px 0.5em 5px;
+        }
+
+        .icon-about {
+            font-size: 2em;
+            transform: translateY(0.4em);
+        }
+
+        .subtitulo {
+            font-size: 0.7em;
+            font-weight: $semi-bold;
+
+            &.naranja {
+                color: $orange-color;
+            }
+
+            &.azul {
+                color: $blue-color;
+            }
+        }
+
+        .servicios-text {
+            font-size: 0.6em;
+            font-weight: $medium;
+        }
+
+        .titulo-servicios {
+            font-size: 1.4em;
+            font-weight: $regular;
+        }
+    }
+
+    &.contacto {
+
+        .subtitulo-1 {
+            font-size: 1.4em;
+            font-weight: $regular;
+        }
+
+        .subtitulo-2 {
+            font-size: 0.9em;
+            font-weight: $semi-bold;
+            color: $gray-transparent;
+        }
+
+        .input-naranja {
+          border: none;
+          color: white;
+          padding: 5px;
+          width: 150px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 0.7em;
+          font-weight: 800;
+          background-color: #FF6633;
+          border-radius: 3px;
+      }
+
+      input[type=text], input[type=email] {
+          background-color: rgba(255, 102, 51, 0.28);
+          border: none;
+          height: 2em;
+          width: 350px;
+          margin-bottom: 1em;
+          padding-left: 15px;
+          padding-top: 0.6em;
+      }
+
+      /*Form inputs placeholder's styles*/
+      input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: rgba(49, 61, 61, .70);
+          font-weight: $medium;
+          font-size: 0.6em;
+      }
+      input::-moz-placeholder { /* Firefox 19+ */
+          color: rgb(49, 61, 61);
+          font-weight: $medium;
+          font-size: 0.6em;
+      }
+      input:-ms-input-placeholder { /* IE 10+ */
+          color: rgb(49, 61, 61);
+          font-weight: $medium;
+          font-size: 0.6em;
+      }
+      input:-moz-placeholder { /* Firefox 18- */
+          color: rgb(49, 61, 61);
+          font-weight: $medium;
+          font-size: 0.6em;
+      }
+  } /* END Contacto */
+
+} /* END Section */
+
+footer {
+    font-weight: $regular;
+    font-size: 0.7em;
+    padding: 2%;
 }
 
 button {
@@ -25,16 +180,66 @@ button {
     font-size: $base-font-size;
     font-weight: bold;
     border-radius: 3px;
+
+    &.naranja {
+        background-color: $orange-color;
+    }
+
+    &.gris {
+        background-color: $gray-color;
+    }
+
+    &.azul {
+        background-color: $blue-color;
+        font-size: 0.6em;
+        padding: 5px;
+        width: 100px;
+    }
+
+    &.transparente {
+        border: 1px solid rgba(48, 61, 61, 0.25);
+        color: rgba(48, 61, 61, 0.60);
+        background-color: transparent;
+        width: 350px;
+    }
 }
 
 button:hover {
     opacity: 0.8;
 }
 
-navbar {
-    background-color: none;
+a {
+    color: $gray-color;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.logo {
+    height: 6em;
+    margin-right: 50px;
+}
+
+.titulo {
+    transform: translateY(1em);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*Overrides bootstrap default navbar style*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 5%;
+    font-size: 1em;
 }
 
 span.glyphicon-menu-down {
     font-size: 2em;
+}
+
+.encabezado {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
