@@ -37,6 +37,8 @@ aside {
     color: $white-color;
     padding-top: 4em;
     padding-bottom: 4em;
+    padding-left: 15%;
+    padding-right: 15%;
 
     &.primer-comentario {
         background-color: $blue-color;
@@ -45,8 +47,6 @@ aside {
     }
 
     &.segundo-comentario {
-        padding-left: 15%;
-        padding-right: 15%;
         background-color: $orange-color;
         font-size: 1.5em;
         .regular {
@@ -55,6 +55,11 @@ aside {
         .semi-bold {
             font-weight: $semi-bold;
         }
+    }
+
+    &.tercer-comentario {
+        background-color: $gray-transparent;
+        font-size: 1.5em;
     }
 }
 
@@ -99,6 +104,49 @@ section {
         .titulo-servicios {
             font-size: 1.4em;
             font-weight: $regular;
+        }
+    }
+
+    &.membresias {
+        h2 {
+            color: $orange-color;
+            font-size: 2em;
+            font-weight: $regular;
+        }
+
+        span {
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 0.7em;
+        }
+
+        .circle {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            line-height: 0;
+            padding: 50% 0;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+
+            &.blue {
+                background: $blue-color;
+            }
+
+            &.orange {
+                background: $orange-color;
+            }
+
+            &.gray {
+                background: $gray-transparent;
+            }
+
+
         }
     }
 
