@@ -1,49 +1,57 @@
-/**
- * SCSS file to be compiled to CSS with SASS
- */
+/* SCSS file to be compiled to CSS with SASS */
 /** Base colors and variables */
+/* Actual styles */
+/* Body general style */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 20px; }
   body.semi-bold {
     font-weight: 700; }
 
+/*Header style*/
 header {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   background-color: #FFFFFF; }
 
+/*Asides styles*/
 aside {
   color: #FFFFFF;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  font-size: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   padding-left: 15%;
   padding-right: 15%; }
   aside.primer-comentario {
-    background-color: #1F8F9A;
+    background-color: rgba(31, 143, 154, 0.7);
     font-weight: 700;
-    font-size: 3em; }
+    font-size: 2em; }
   aside.segundo-comentario {
-    background-color: #FF6633;
-    font-size: 1.5em; }
+    background-color: rgba(255, 102, 51, 0.7); }
     aside.segundo-comentario .regular {
       font-weight: 400; }
     aside.segundo-comentario .semi-bold {
       font-weight: 600; }
   aside.tercer-comentario {
-    background-color: rgba(48, 61, 61, 0.6);
-    font-size: 1.5em; }
+    background-color: rgba(31, 143, 154, 0.7); }
+  aside.cuarto-comentario {
+    background-color: rgba(255, 102, 51, 0.7); }
 
+/*Sections style*/
 section {
   background-color: #FFFFFF;
   padding: 5%;
+  /*Servicios*/
+  /*Membresias*/
+  /*Rentas*/
   /* END Contacto */ }
   section.servicios .gris-top {
     background-color: none; }
   section.servicios .gris {
     background-color: rgba(48, 61, 61, 0.25);
+    border-radius: 5px;
     height: 7.5em;
-    padding: 1em 5px 0.5em 5px; }
+    padding: 1.5em 10px 0.5em 10px; }
   section.servicios .icon-about {
     font-size: 2em;
     transform: translateY(0.4em); }
@@ -68,23 +76,15 @@ section {
     font-size: 1.2em; }
   section.membresias p {
     font-size: 0.7em; }
-  section.membresias .circle {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    line-height: 0;
-    padding: 50% 0;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-    font-size: 1.5em; }
-    section.membresias .circle.blue {
-      background: #1F8F9A; }
-    section.membresias .circle.orange {
-      background: #FF6633; }
-    section.membresias .circle.gray {
-      background: rgba(48, 61, 61, 0.6); }
+  section.rentas h2 {
+    color: #1F8F9A;
+    font-size: 2em;
+    font-weight: 400; }
+  section.rentas th {
+    text-align: center; }
+  section.rentas small {
+    font-size: 0.7em;
+    font-weight: 400; }
   section.contacto {
     /*Form inputs placeholder's styles*/ }
     section.contacto .subtitulo-1 {
@@ -189,7 +189,7 @@ a {
   background-color: transparent;
   border-color: transparent;
   padding: 5%;
-  font-size: 1em; }
+  font-size: 0.8em; }
 
 span.glyphicon-menu-down {
   font-size: 2em; }
