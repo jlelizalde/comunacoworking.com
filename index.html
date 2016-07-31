@@ -9,22 +9,22 @@
   <meta name="author" content="">
 
   <!-- Favicons generated with http://realfavicongenerator.net -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/icons/favicon-194x194.png" sizes="194x194">
-  <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/icons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/icons/manifest.json">
-  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="apple-mobile-web-app-title" content="ComunaCoworking">
   <meta name="application-name" content="ComunaCoworking">
   <meta name="msapplication-TileColor" content="#da532c">
@@ -33,23 +33,20 @@
 
   <title>Comuna Coworking</title>
 
+  <!--          Assets         -->
+  <!-- Google fonts -->
   <link href='https://fonts.googleapis.com/css?family=Poppins:400,600,500' rel='stylesheet' type='text/css'>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <!-- Latest compiled and minified Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <!-- Latest compiled and minified Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <!-- FullPage.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.js"></script>
-
-  <script src="js/main.js"></script>
-
-  <!-- Compiled stylesheet -->
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Sweet alert -->
+  <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+  <!-- Custom styles -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/comunafonts.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.min.css">
 
+  <!-- Analytics -->
   <!-- Facebook Pixel Code
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -63,46 +60,56 @@
       <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=995519560517436&ev=PageView&noscript=1"/>
     </noscript>
   -->
+  <!-- Google analytics -->
+  <!-- <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-78232204-1', 'auto');
+    ga('send', 'pageview');
+  </script> -->
+
 </head>
 <body>
-  <div id="fullpage" class="container-fluid">
+  <div class="container-fluid">
 
     <!-- Encabezado -->
-    <header class="section" data-anchor="data-header">
+    <header id="header">
       <!-- Barra de navegación -->
-      <div class="row">
-        <div class="col-md-5 col-md-offset-7">
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <span><a href="#data-membresias">Precios</a></span> |
-                <span><a href="#data-rentas">Renta de espacios</a></span> |
-                <span><a href="#data-contacto">Contacto</a></span> |
-                <a target="_blank" href="https://www.facebook.com/comunacoworking">
-                  <span class="icon-FacebookCopy2">
-                    <span class="path1"></span><span class="path2"></span></span>
-                  </span>
-                </a>
-                <a target="_blank" href="https://twitter.com/comunaespacio">
-                  <span class="icon-TwitterCopy2">
-                    <span class="path1"></span><span class="path2"></span></span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header navbar-right">
+            <span><a href="#membresias">Membresias</a></span> |
+            <span><a href="#rentas">Renta de espacios</a></span> |
+            <span><a href="#contacto">Contacto</a></span> |
+            <span>
+              <a target="_blank" href="https://www.facebook.com/comunacoworking">
+                <span class="icon-FacebookCopy2">
+                  <span class="path1"></span><span class="path2"></span></span>
+                </span>
+              </a>
+            </span>
+            <span>
+              <a target="_blank" href="https://twitter.com/comunaespacio">
+                <span class="icon-TwitterCopy2">
+                  <span class="path1"></span><span class="path2"></span></span>
+                </span>
+              </a>
+            </span>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <div class="row">
         <div class="col-md-12">
 
-          <div class="row">
-            <div class="col-md-1 col-md-offset-1 logo">
-              <img class="logo" src="img/logo.svg" alt="Comuna coworking logo">
+          <div class="row animated bounceInDown">
+            <div class="col-md-1 col-md-offset-1 logo col-sm-12">
+              <img class="logo" src="assets/img/logo.svg" alt="Comuna coworking logo">
             </div>
             <div class="col-md-9 titulo">
-              <span>C O N E C T A  -  C O L A B O R A  -  C R E C E</span>
+              <span>C O N E C T A</span> - <span>C O L A B O R A</span> - <span>C R E C E</span>
             </div>
           </div>
 
@@ -148,7 +155,9 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
               <div class="text-center">
-                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                <a href="#servicios">
+                  <span class="glyphicon glyphicon-menu-down animated bounce" aria-hidden="true"></span>
+                </a>
               </div>
             </div>
           </div>
@@ -160,7 +169,7 @@
     </header>
 
     <!-- Primer comentario -->
-    <aside class="primer-comentario section fp-auto-height" data-anchor="data-primer-comentario">
+    <aside class="primer-comentario">
       <div class="row">
         <div class="col-md-12 text-center">
           <span>Casa Comuna en Orizaba</span>
@@ -169,7 +178,7 @@
     </aside>
 
     <!-- Servicios -->
-    <section class="servicios section" id="servicios" data-anchor="data-servicios">
+    <section class="servicios" id="servicios">
 
       <div class="row">
         <div class="col-md-12 text-center titulo-servicios">
@@ -319,7 +328,9 @@
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class="text-center">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            <a href="#membresias">
+              <span class="glyphicon glyphicon-menu-down animated bounce" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -329,7 +340,7 @@
     <!-- End Servicios -->
 
     <!-- Segundo comentario -->
-    <aside class="segundo-comentario section fp-auto-height" data-anchor="data-segundo-comentario">
+    <aside class="segundo-comentario">
       <div class="row">
         <div class="col-md-12 text-center">
           <p class="regular">El compartir gastos con otros emprendedores como el espacio, luz, agua, internet y demás servicios nos permite darte un precio de renta accesible</p>
@@ -339,59 +350,8 @@
       </div>
     </aside>
 
-<!-- Membresias
-    <section class="membresias section" id="membresias" data-anchor="data-membresias">
-
-      <div class="row text-center">
-        <h2>Membresías</h2>
-      </div>
-
-      <br>
-
-      <div class="row text-center">
-        <div class="col-md-2 col-md-offset-2">
-          <span>día</span>
-          <hr>
-          <div class="circle gray">$120</div>
-          <hr>
-          <p>Internet hasta 30 mbps</p>
-          <p>Uso de impresora, escáner y fotocopiadora</p>
-        </div>
-        <div class="col-md-2 col-md-offset-1">
-          <span>semana</span>
-          <hr>
-          <div class="circle blue">$500</div>
-          <hr>
-          <p>Internet hasta 30 mbps</p>
-          <p>Uso de espacios privados (calendarización previa)</p>
-          <p>Uso de impresora, escáner y fotocopiadora</p>
-        </div>
-        <div class="col-md-2 col-md-offset-1">
-          <span>mes</span>
-          <hr>
-          <div class="circle orange">$1500</div>
-          <hr>
-          <p>Internet hasta 30 mbps</p>
-          <p>Recepción de correspondencia y mensajería</p>
-          <p>Uso de espacios privados (calendarización previa)</p>
-          <p>Uso de impresora, escáner y fotocopiadora</p>
-          <p>Incluye diseño de imagen</p>
-        </div>
-      </div>
-
-      <br>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div class="text-center">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-          </div>
-        </div>
-      </div>
-
-    </section> -->
-
     <!-- Membresias -->
-    <section class="membresias section" id="membresias" data-anchor="data-membresias">
+    <section class="membresias" id="membresias">
 
       <div class="row text-center">
         <h2>Membresías</h2>
@@ -459,7 +419,7 @@
                 <td><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></td>
                 <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
               </tr>
-              <tr>
+              <tr class="bottom-row">
                 <td></td>
                 <td>$350.00</td>
                 <td>$500.00</td>
@@ -482,7 +442,9 @@
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class="text-center">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            <a href="#rentas">
+              <span class="glyphicon glyphicon-menu-down animated bounce" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -490,18 +452,17 @@
     </section>
 
     <!-- Tercer comentario -->
-    <aside class="tercer-comentario section fp-auto-height" data-anchor="data-tercer-comentario">
+    <aside class="tercer-comentario">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="regular">Propongo que aquí vaya otra sección intermedia para separar los contenidos igual</p>
+          <p class="semi-bold">¡Conoce a nuestros coworkers!</p>
           <br>
-          <p class="semi-bold">Puede ser en otro de los colores que se usan (faltaría una sección gris para tener los tres colores del sitio)</p>
-        </div>
+          <p class="regular">Proximamente</p>
       </div>
     </aside>
 
         <!-- Renta de espacios -->
-    <section class="rentas section" id="rentas" data-anchor="data-rentas">
+    <section class="rentas" id="rentas">
 
       <div class="row text-center">
         <h2>Renta de espacios</h2>
@@ -539,7 +500,7 @@
                 <td>Hasta 2 horas al día</td>
                 <td>Hasta 4 horas al día</td>
               </tr>
-              <tr>
+              <tr class="bottom-row">
                 <td>$650.00</td>
                 <td>$450.00</td>
                 <td>$600.00</td>
@@ -554,7 +515,9 @@
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class="text-center">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            <a href="#contacto">
+              <span class="glyphicon glyphicon-menu-down animated bounce" aria-hidden="true"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -562,18 +525,18 @@
     </section>
 
     <!-- Cuarto comentario -->
-    <aside class="cuarto-comentario section fp-auto-height" data-anchor="data-cuarto-comentario">
+    <aside class="cuarto-comentario">
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="regular">Propongo que aquí vaya otra sección intermedia para separar los contenidos igual</p>
+          <p class="semi-bold">Checa nuestros próximos eventos</p>
           <br>
-          <p class="semi-bold">Puede ser en otro de los colores que se usan (faltaría una sección gris para tener los tres colores del sitio)</p>
+          <p class="regular">Proximamente</p>
         </div>
       </div>
     </aside>
 
     <!-- Contacto -->
-    <section class="contacto section" id="contacto" data-anchor="data-contacto">
+    <section class="contacto" id="contacto">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <div class="subtitulo-1">
@@ -606,12 +569,12 @@
           </form>
           <br>
           <a href="#">
-            <button type="button" name="button" class="transparente">Job openings soon</button>
+            <button type="button" name="button" id="job-opennings" class="transparente">Job openings soon</button>
           </a>
         </div>
 
-        <div class="col-md-4 col-md-offset-1">
-          <img src="img/orizaba-contacto.png" alt="Panorámica orizaba con teléfono (2727242761)"><br>
+        <div class="col-md-4 col-md-offset-1 text-center">
+          <img src="assets/img/orizaba-contacto.png" alt="Panorámica orizaba con teléfono (2727242761)"><br>
           <span class="semi-bold">Somos socialmente activos</span><br>
           <span class="medium">¡SIGUENOS EN REDES SOCIALES!</span>
           <br>
@@ -629,12 +592,18 @@
     <!-- End contacto -->
 
     <!-- Pie de página -->
-    <footer class="section fp-auto-height" data-anchor="data-footer">
+    <footer>
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
           <div class="text-center">
             <span>Comuna Coworking &copy; México</span>
           </div>
+        </div>
+        <div class="col-md-2 col-md-offset-2">
+          <a href="#header">
+            Volver al inicio
+            <span class="glyphicon glyphicon-triangle-top"></span>
+          </a>
         </div>
       </div>
     </footer>
@@ -642,5 +611,13 @@
 
   </div>
 
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Sweet alert -->
+  <script src="js/sweetalert.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>

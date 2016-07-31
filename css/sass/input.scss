@@ -32,8 +32,15 @@ body {
 header { 
   font-family: $basic-font;
   font-size: $base-font-size;
-  background-color: $white-color;
+  /*background-color: $white-color;*/
+  background-image: url(../assets/img/coworking-space.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+
 
 /*Asides styles*/
 aside {
@@ -118,19 +125,32 @@ section {
 
   /*Membresias*/
   &.membresias {
+    background-image: url(../assets/img/coworking-space.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
     h2 {
       color: $orange-color;
       font-size: 2em;
       font-weight: $regular;
     }
 
-    span {
-      font-size: 1.2em;
+    table {
+      td {
+        font-size: 0.8em;
+        span {
+          &.glyphicon-minus {color: red;}
+          &.glyphicon-ok {color: green;}
+        }
+      }
     }
 
     p {
-      font-size: 0.7em;
+      font-size: 0.5em;
     }
+
   }
 
   /*Rentas*/
@@ -145,11 +165,19 @@ section {
       text-align: center;
     }
 
+    td {
+      font-size: 0.8em;
+    }
+
     small {
       font-size: 0.7em;
       font-weight: $regular;
     }
 
+  }
+
+  .bottom-row {
+    font-weight: $bold;
   }
 
   &.contacto {
@@ -215,9 +243,11 @@ section {
     } /* END Section */
 
 footer {
+  color: $white-color;
   font-weight: $regular;
   font-size: 0.7em;
   padding: 2%;
+  background-color: rgba($blue-color,0.7);
 }
 
 button {
@@ -281,7 +311,7 @@ a {
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
-  padding: 5%;
+  padding: 1%;
   font-size: 0.8em;
 }
 
@@ -293,3 +323,18 @@ span.glyphicon-menu-down {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+
+/*Animate.css rules*/
+/*.glyphicon-menu-down {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 3s;
+  -moz-animation-iteration-count: infinite;
+
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: 3s;
+  -ms-animation-iteration-count: infinite;
+}*/

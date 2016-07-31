@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'comuna';
-    src:    url('/fonts/comuna.eot?mmmyn3');
-    src:    url('/fonts/comuna.eot?mmmyn3#iefix') format('embedded-opentype'),
-        url('/fonts/comuna.ttf?mmmyn3') format('truetype'),
-        url('/fonts/comuna.woff?mmmyn3') format('woff'),
-        url('/fonts/comuna.svg?mmmyn3#comuna') format('svg');
+    src:    url('../assets/fonts/comuna.eot?mmmyn3');
+    src:    url('../assets/fonts/comuna.eot?mmmyn3#iefix') format('embedded-opentype'),
+        url('../assets/fonts/comuna.ttf?mmmyn3') format('truetype'),
+        url('../assets/fonts/comuna.woff?mmmyn3') format('woff'),
+        url('../assets/fonts/comuna.svg?mmmyn3#comuna') format('svg');
     font-weight: normal;
     font-style: normal;
 }
