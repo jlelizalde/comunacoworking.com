@@ -105,6 +105,7 @@ section {
   section .bottom-row {
     font-weight: 700; }
   section.contacto {
+    /*Form inputs placeholder's styles*/
     /*Form inputs placeholder's styles*/ }
     section.contacto .subtitulo-1 {
       font-size: 1.4em;
@@ -125,6 +126,13 @@ section {
       font-weight: 800;
       background-color: #FF6633;
       border-radius: 3px; }
+    section.contacto textarea {
+      background-color: rgba(255, 102, 51, 0.28);
+      border: none;
+      width: 350px;
+      margin-bottom: 1em;
+      padding-left: 15px;
+      padding-top: 0.6em; }
     section.contacto input[type=text], section.contacto input[type=email] {
       background-color: rgba(255, 102, 51, 0.28);
       border: none;
@@ -153,13 +161,33 @@ section {
       color: #313d3d;
       font-weight: 500;
       font-size: 0.6em; }
+    section.contacto textarea::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: rgba(49, 61, 61, 0.7);
+      font-weight: 500;
+      font-size: 0.6em; }
+    section.contacto textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #313d3d;
+      font-weight: 500;
+      font-size: 0.6em; }
+    section.contacto textarea:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #313d3d;
+      font-weight: 500;
+      font-size: 0.6em; }
+    section.contacto textarea:-moz-placeholder {
+      /* Firefox 18- */
+      color: #313d3d;
+      font-weight: 500;
+      font-size: 0.6em; }
 
 /* END Section */
 footer {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 0.7em;
-  padding: 2%;
+  padding: 1%;
   background-color: rgba(31, 143, 154, 0.7); }
 
 button {
@@ -218,6 +246,20 @@ span.glyphicon-menu-down {
 .encabezado {
   padding-top: 1%;
   padding-bottom: 1%; }
+
+.backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 1.5em;
+  cursor: pointer;
+  z-index: 10;
+  background: url("../assets/images/arrow_up.svg") no-repeat 0 0 #333;
+  /* fallback for older browsers */
+  background: url("../assets/img/arrow.png") no-repeat 0 0 rgba(48, 61, 61, 0.5);
+  border-radius: 5px; }
 
 /*Animate.css rules*/
 /*.glyphicon-menu-down {
