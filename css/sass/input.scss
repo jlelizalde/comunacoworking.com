@@ -1,0 +1,385 @@
+/* SCSS file to be compiled to CSS with SASS */
+
+/** Base colors and variables */
+$basic-font: 'Poppins', sans-serif;
+$base-font-size: 20px;
+$orange-color: #FF6633;
+$blue-color: #1F8F9A;
+$gray-color: #303D3D;
+$gray-background : rgba(48, 61, 61, 0.25);
+$gray-transparent: rgba(48, 61, 61, 0.60);
+$white-color: #FFFFFF;
+$regular: 400;
+$medium : 500;
+$semi-bold: 600;
+$bold: 700;
+$dummy-color: #999;
+$dummy-color2: #777;
+
+/* Actual styles */
+
+/* Body general style */
+body {
+  font-family: $basic-font;
+  font-size: $base-font-size;
+
+  &.semi-bold {
+    font-weight: $bold;
+  }
+}
+
+/*Header style*/
+header { 
+  font-family: $basic-font;
+  font-size: $base-font-size;
+  /*background-color: $white-color;*/
+  background-image: url(../assets/img/coworking-space.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+/*Asides styles*/
+aside {
+  color: $white-color;
+  font-size: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  &.primer-comentario {
+    background-color: rgba($blue-color,0.7);
+    font-weight: $bold;
+    font-size: 2em;
+  }
+
+  &.segundo-comentario {
+    background-color: rgba($orange-color,0.7);
+    .regular {
+      font-weight: $regular;
+    }
+    .semi-bold {
+      font-weight: $semi-bold;
+    }
+  }
+
+  &.tercer-comentario {
+    background-color: rgba($blue-color,0.7);
+  }
+
+  &.cuarto-comentario {
+    background-color: rgba($orange-color,0.7);
+  }
+}
+
+/*Sections style*/
+section {
+  background-color: $white-color;
+  padding: 5%;
+
+  /*Servicios*/
+  &.servicios {
+    .gris-top {
+      background-color: none;
+    }
+
+    .gris {
+      background-color: $gray-background;
+      border-radius: 5px;
+      height: 7.5em;
+      padding: 1.5em 10px 0.5em 10px;
+    }
+
+    .icon-about {
+      font-size: 2em;
+      transform: translateY(0.4em);
+    }
+
+    .subtitulo {
+      font-size: 0.7em;
+      font-weight: $semi-bold;
+
+      &.naranja {
+        color: $orange-color;
+      }
+
+      &.azul {
+        color: $blue-color;
+      }
+    }
+
+    .servicios-text {
+      font-size: 0.6em;
+      font-weight: $medium;
+    }
+
+    .titulo-servicios {
+      font-size: 1.4em;
+      font-weight: $regular;
+    }
+  }
+
+  /*Membresias*/
+  &.membresias {
+    background-image: url(../assets/img/coworking-space.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    h2 {
+      color: $orange-color;
+      font-size: 2em;
+      font-weight: $regular;
+    }
+
+    table {
+      td {
+        font-size: 0.8em;
+        span {
+          &.glyphicon-minus {color: red;}
+          &.glyphicon-ok {color: green;}
+        }
+      }
+    }
+
+    p {
+      font-size: 0.5em;
+    }
+
+  }
+
+  /*Rentas*/
+  &.rentas {
+    h2 {
+      color: $blue-color;
+      font-size: 2em;
+      font-weight: $regular;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    td {
+      font-size: 0.8em;
+    }
+
+    small {
+      font-size: 0.7em;
+      font-weight: $regular;
+    }
+
+  }
+
+  .bottom-row {
+    font-weight: $bold;
+  }
+
+  &.contacto {
+
+    .subtitulo-1 {
+      font-size: 1.4em;
+      font-weight: $regular;
+    }
+
+    .subtitulo-2 {
+      font-size: 0.9em;
+      font-weight: $semi-bold;
+      color: $gray-transparent;
+    }
+
+    .input-naranja {
+      border: none;
+      color: white;
+      padding: 5px;
+      width: 150px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.7em;
+      font-weight: 800;
+      background-color: #FF6633;
+      border-radius: 3px;
+    }
+
+    textarea {
+      background-color: rgba(255, 102, 51, 0.28);
+      border: none;
+      width: 350px;
+      margin-bottom: 1em;
+      padding-left: 15px;
+      padding-top: 0.6em;
+    }
+
+    input[type=text], input[type=email] {
+      background-color: rgba(255, 102, 51, 0.28);
+      border: none;
+      height: 2em;
+      width: 350px;
+      margin-bottom: 1em;
+      padding-left: 15px;
+      padding-top: 0.6em;
+    }
+
+    /*Form inputs placeholder's styles*/
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: rgba(49, 61, 61, .70);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+    input::-moz-placeholder { /* Firefox 19+ */
+      color: rgb(49, 61, 61);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+    input:-ms-input-placeholder { /* IE 10+ */
+      color: rgb(49, 61, 61);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+      color: rgb(49, 61, 61);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+
+    /*Form inputs placeholder's styles*/
+    textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: rgba(49, 61, 61, .70);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+    textarea::-moz-placeholder { /* Firefox 19+ */
+      color: rgb(49, 61, 61);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+    textarea:-ms-input-placeholder { /* IE 10+ */
+      color: rgb(49, 61, 61);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+    textarea:-moz-placeholder { /* Firefox 18- */
+      color: rgb(49, 61, 61);
+      font-weight: $medium;
+      font-size: 0.6em;
+    }
+
+  } /* END Contacto */
+} /* END Section */
+
+footer {
+  color: $white-color;
+  font-weight: $regular;
+  font-size: 0.7em;
+  padding: 1%;
+  background-color: rgba($blue-color,0.7);
+}
+
+button {
+  border : none;
+  color : white;
+  padding : 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  border-radius: 3px;
+
+  &.naranja {
+    background-color: $orange-color;
+  }
+
+  &.gris {
+    background-color: $gray-color;
+  }
+
+  &.azul {
+    background-color: $blue-color;
+    font-size: 0.6em;
+    padding: 5px;
+    width: 100px;
+  }
+
+  &.transparente {
+    border: 1px solid rgba(48, 61, 61, 0.25);
+    color: rgba(48, 61, 61, 0.60);
+    background-color: transparent;
+    width: 350px;
+  }
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+a {
+  color: $gray-color;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 6em;
+  margin-right: 50px;
+}
+
+.titulo {
+  transform: translateY(1em);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*Overrides bootstrap default navbar style*/
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 1%;
+  font-size: 0.8em;
+}
+
+span.glyphicon-menu-down {
+  font-size: 2em;
+}
+
+.encabezado {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 1.5em;
+  cursor: pointer;
+  z-index: 10;
+  background: url('../assets/images/arrow_up.svg') no-repeat 0 0 #333; /* fallback for older browsers */
+  background: url('../assets/img/arrow.png') no-repeat 0 0 rgba($gray-color,0.5);
+  border-radius: 5px;
+}
+
+/*Animate.css rules*/
+/*.glyphicon-menu-down {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 3s;
+  -moz-animation-iteration-count: infinite;
+
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: 3s;
+  -ms-animation-iteration-count: infinite;
+}*/
